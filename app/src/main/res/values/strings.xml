@@ -1,0 +1,20 @@
+<resources>
+    <string name="mail_address">20</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string-array name="Spinner_items">
+        <item>O+</item>
+        <item>O-</item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+    </string-array>
+
+    <string-array name="Spinner_items2">
+        <item>mg/dl</item>
+        <item>mmol/L</item>
+    </string-array>
+</resources>

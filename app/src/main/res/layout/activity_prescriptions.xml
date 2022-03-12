@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/prescriptionbg"
+    tools:context=".Prescriptions">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:orientation="vertical">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint=" Hospital/Clinic"
+                android:background="@drawable/edit_bg"
+                android:textSize="20sp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:hint=" Doctor"
+                android:background="@drawable/edit_bg"
+                android:textSize="20sp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint=" Prescribed On"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit_bg"
+                android:textSize="20sp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint=" Phone No "
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit_bg"
+                android:textSize="20sp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint=" Address "
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit_bg"
+                android:textSize="20sp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint=" Notes "
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit_bg"
+                android:textSize="20sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prescription Image"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"/>
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_attachment"
+                android:layout_marginStart="250dp"
+                android:layout_marginTop="-30dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SAVE"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/teal_200"
+                android:layout_gravity="right"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

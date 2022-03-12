@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Feedback"
+    app:cardElevation="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_margin="30dp">
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtEmail"
+            android:hint="Your E-mail"
+            android:inputType="text"
+            android:background="@drawable/edit_bg"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:fontFamily="monospace"
+            app:met_singleLineEllipsis="true"
+            app:met_baseColor="@color/colorPrimaryDark"
+            app:met_primaryColor="@color/colorPrimaryDark"/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtName"
+            android:hint="Your Name"
+            android:background="@drawable/edit_bg"
+            android:inputType="text"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:fontFamily="monospace"
+            app:met_singleLineEllipsis="true"
+            app:met_baseColor="@color/colorPrimaryDark"
+            app:met_primaryColor="@color/colorPrimaryDark"/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtFeedback"
+            android:hint="Your Feedback"
+            android:background="@drawable/edit_bg"
+            android:inputType="text"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:fontFamily="monospace"
+            app:met_singleLineEllipsis="true"
+            app:met_baseColor="@color/colorPrimaryDark"
+            app:met_primaryColor="@color/colorPrimaryDark"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

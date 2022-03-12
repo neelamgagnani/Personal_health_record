@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:background="@drawable/bpbg"
+    tools:context=".BloodPressure">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="280dp"
+        app:cardCornerRadius="4dp"
+        android:layout_centerInParent="true"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:hint="Enter Patient's Name"
+            android:textSize="20sp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="60dp"
+            android:orientation="vertical">
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SYSTOLIC"
+            android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/mnsbtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="-"
+                android:backgroundTint="@color/teal_700"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/rstbtn"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:text="120"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:textColor="#000"/>
+
+            <Button
+                android:id="@+id/plsbtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="+"
+                android:backgroundTint="@color/teal_700"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="22dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DIASTOLIC"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/mnsbtn1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="-"
+                android:backgroundTint="@color/teal_700"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/rstbtn1"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:text="80"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:textColor="#000"/>
+
+            <Button
+                android:id="@+id/plsbtn1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="+"
+                android:backgroundTint="@color/teal_700"
+                android:textSize="25sp" />
+            <TextView
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CANCEL"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lay1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="250dp"
+            android:gravity="center"
+            android:layout_marginTop="61dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PULSE"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/mnsbtn2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="-"
+                android:backgroundTint="@color/teal_700"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/rstbtn2"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="75"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:textColor="#000"/>
+
+            <Button
+                android:id="@+id/plsbtn2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="+"
+                android:backgroundTint="@color/teal_700"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/set"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SET"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
